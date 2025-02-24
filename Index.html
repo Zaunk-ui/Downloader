@@ -1,0 +1,68 @@
+<!DOCTYPE html><html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Downloader</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Iceberg&family=Kelly+Slab&family=Quicksand:wght@300..700&family=Shadows+Into+Light&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Media Downloader</h1>
+        <button id="darkModeToggle" onclick="toggleDarkMode()">Dark Mode</button>
+    </header><nav>
+    <ul>
+        <li><a href="#facebook">Facebook</a></li>
+        <li><a href="#instagram">Instagram</a></li>
+        <li><a href="#tiktok">TikTok</a></li>
+        <li><a href="#youtube">YouTube</a></li>
+        <li><a href="#youtubemp3">Youtube Mp3</a></li>
+    </ul>
+</nav>
+
+<main>
+    <section id="facebook">
+        <h2>Download Facebook Video</h2>
+        <input type="text" id="fbUrl" placeholder="Masukkan URL Facebook">
+        <button onclick="downloadFB()">Download</button>
+        <div id="fbResult"></div>
+    </section>
+    
+    <section id="instagram">
+        <h2>Download Instagram Video</h2>
+        <input type="text" id="igUrl" placeholder="Masukkan URL Instagram">
+        <button onclick="downloadIG()">Download</button>
+        <div id="igResult"></div>
+    </section>
+    
+    <section id="tiktok">
+        <h2>Download TikTok Video</h2>
+        <input type="text" id="ttUrl" placeholder="Masukkan URL TikTok">
+        <button onclick="downloadTT()">Download</button>
+        <div id="ttResult"></div>
+    </section>
+    
+    <section id="youtube">
+        <h2>Download YouTube Video</h2>
+        <input type="text" id="ytUrl" placeholder="Masukkan URL YouTube">
+        <button onclick="downloadYT()">Download</button>
+        <div id="ytResult"></div>
+    </section>
+    
+    <section id="youtubemp3">
+        <h2>Download YouTube Music</h2>
+        <input type="text" id="ymUrl" placeholder="Masukkan URL YouTube">
+        <button onclick="downloadYM()">Download</button>
+        <div id="ymResult"></div>
+    </section>
+</main>
+<footer>
+  <p>&copy; 2025 Angga Jaunk. All rights reserved.
+  </p>
+  </footer>
+<script src="script.js"></script>
+
+</body>
+</html>
